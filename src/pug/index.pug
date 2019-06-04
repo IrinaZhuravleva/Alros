@@ -5,30 +5,24 @@ html(lang="en" class=" no-touch" )
 	body
 		include pages/_vertical-menu.pug
 		
-		include pages/_header-content
-
-
-		include pages/_about-us
+		.content
 			
-		//- section#building.cd-section
-		//- 	a(href="#building")
-		//- 		a(href="#home" class="cd-scroll-up cd-img-replace")
-		//- 		h1 Коммерческое  строительство
-		//- section#services.cd-section
-		//- 	a(href="#services")
-		//- 		a(href="#home" class="cd-scroll-up cd-img-replace")
-		//- 		h1 Услуги
-		//- section#company.cd-section
-		//- 	a(href="#company")
-		//- 		a(href="#home" class="cd-scroll-up cd-img-replace")
-		//- 		h1 Компания
-		//- section#contacts.cd-section
-		//- 	a(href="#contacts")
-		//- 		a(href="#home" class="cd-scroll-up cd-img-replace")
-		//- 		h1 Контакты
-		//- section#shop.cd-section
-		//- 	a(href="#shop")
-		//- 		a(href="#home" class="cd-scroll-up cd-img-replace")
-		//- 		h1 Магазин
-	
+			include pages/_header-content
+
+
+			include pages/_about-us
+
+
+			include pages/_alros-home
+				
+
+			include pages/_building
+
+
+			include pages/_offices
+
+			//- .footer
+
+			include pages/_footer
+		
 	include pages/_foot

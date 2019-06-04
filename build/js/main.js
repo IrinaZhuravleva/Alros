@@ -60,6 +60,57 @@ $(document).ready(function(){
 
   setTimeout(startTimer, 500);
 
+  //анимация чисел
+
+  // <p>Fun level <span id="fun-level" style="color: red;">0 %</span>.</p>
+
+// var percent_number_step = $.animateNumber.numberStepFactories.append(' %')
+
+$('#fun-level-1').animateNumber(
+  {
+    number: 60,
+    'font-size': '72px',
+  },
+  {
+    easing: 'swing',
+    duration: 5000
+  }
+);
+
+$('#fun-level-2').animateNumber(
+  {
+    number: 45,
+    'font-size': '72px',
+  },
+  {
+    easing: 'swing',
+    duration: 5000
+  }
+);
+
+$('#fun-level-3').animateNumber(
+  {
+    number: 45,
+    'font-size': '72px',
+  },
+  {
+    easing: 'swing',
+    duration: 5000
+  }
+);
+
+$('#fun-level-4').animateNumber(
+  {
+    number: 1000,
+   'font-size': '72px',
+  },
+  {
+    easing: 'swing',
+    duration: 5000
+  }
+);
+
+
 	
 });
 
