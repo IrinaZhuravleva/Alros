@@ -1,33 +1,7 @@
 $(document).ready(function(){
 
-  // var link = $('.burger-menu');
-  // var link_active = $('.blockmenu__link');
-  // var menu = $('.blockmenu');
-  // var close = $('.blockmenu-close');
-
-  // var menuBtn =$('.menu-btn');
-
-  // link.click(function(){
-  //   link.toggleClass('menu-link_active');
-  //   menu.toggleClass('blockmenu_active');
-
-
-  //   menuBtn.toggleClass('menu-btn_active');
-
-  // });
-  // close.click(function(){
-  //   menu.removeClass('blockmenu_active');
-  // });
-  // link_active.click(function(){
-  //   menu.removeClass('blockmenu_active');
-  // });
-
-
-
-  // var link = $('.burger-menu');
   var link_active = $('.blockmenu__link');
   var menu = $('.blockmenu');
-  // var menu = $('.menu');
   var close = $('.menu-btn_active');
 
   var menuBtn =$('.menu-btn');
@@ -35,8 +9,6 @@ $(document).ready(function(){
   menuBtn.click(function(){
     menuBtn.toggleClass('menu-link_active');
     menu.toggleClass('blockmenu_active');
-    // menu.addClass('blockmenu_active');
-
     menuBtn.toggleClass('menu-btn_active');
 
   });
@@ -49,67 +21,65 @@ $(document).ready(function(){
 
   //
 
-  // $('.clicker').on("click", function(){
-  //   $('.header-content__background').toggleClass('active');
-  //   $('.block').toggleClass('active');
-  // });
+  // // $('.clicker').on("click", function(){
+  // //   $('.header-content__background').toggleClass('active');
+  // //   $('.block').toggleClass('active');
+  // // });
 
-  var startTimer = function() {
-    $('.header-content__background').addClass('active');
-  };
+  // var startTimer = function() {
+  //   $('.header-content__background').addClass('active');
+  // };
 
-  setTimeout(startTimer, 500);
+  // setTimeout(startTimer, 500);
 
   //анимация чисел
 
-  // <p>Fun level <span id="fun-level" style="color: red;">0 %</span>.</p>
+  $('#fun-level-1').animateNumber(
+    {
+      number: 60,
+      'font-size': '72px',
+    },
+    {
+      easing: 'swing',
+      duration: 5000
+    }
+  );
 
-// var percent_number_step = $.animateNumber.numberStepFactories.append(' %')
+  $('#fun-level-2').animateNumber(
+    {
+      number: 45,
+      'font-size': '72px',
+    },
+    {
+      easing: 'swing',
+      duration: 5000
+    }
+  );
 
-$('#fun-level-1').animateNumber(
-  {
-    number: 60,
-    'font-size': '72px',
-  },
-  {
-    easing: 'swing',
-    duration: 5000
-  }
-);
+  $('#fun-level-3').animateNumber(
+    {
+      number: 45,
+      'font-size': '72px',
+    },
+    {
+      easing: 'swing',
+      duration: 5000
+    }
+  );
 
-$('#fun-level-2').animateNumber(
-  {
-    number: 45,
-    'font-size': '72px',
-  },
-  {
-    easing: 'swing',
-    duration: 5000
-  }
-);
+  $('#fun-level-4').animateNumber(
+    {
+      number: 1000,
+     'font-size': '72px',
+    },
+    {
+      easing: 'swing',
+      duration: 5000
+    }
+  );
 
-$('#fun-level-3').animateNumber(
-  {
-    number: 45,
-    'font-size': '72px',
-  },
-  {
-    easing: 'swing',
-    duration: 5000
-  }
-);
 
-$('#fun-level-4').animateNumber(
-  {
-    number: 1000,
-   'font-size': '72px',
-  },
-  {
-    easing: 'swing',
-    duration: 5000
-  }
-);
-
+//скроллинг
   $(window).scroll(function(){
     if ($(this).scrollTop() > $(this).height()) {
       $('.top').addClass('active');
@@ -122,21 +92,12 @@ $('#fun-level-4').animateNumber(
     $('html, body').stop().animate({scrollTop:0}, 'slow', 'swing');
   });
 
-//
-  // $('.header-nav-drop__home').click(function(){
-  //   $('.droplink').toggleClass('droplink-show');
-  // });
 
-  // $('.header-nav-drop__home').mouseover(function(){
-  //   $('.droplink').addClass('droplink-show');
-  // });
-
-  // $('.header-nav-drop__home').mouseout(function(){
-  //   $('.droplink').removeClass('droplink-show');
-  // });
 	
 });
 
+
+//Вертикальное меню
 jQuery(document).ready(function($){
   var contentSections = $('.cd-section'),
     navigationItems = $('#cd-vertical-nav a');
