@@ -27,19 +27,39 @@
 }
 
 .navigation__link {
-	text-decoration: none;
+	// text-decoration: none;
 	color: #fff;
 	font-family: "Gotham Pro";
 	font-size: 16px;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 0.18px;
+	position: relative;
+	
+	padding-left: 5px;//??
+
+	// &:hover::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: -5px;
+	// 	height: 10px;
+	// 	width: 1px;
+	// 	background-color: #fff;
+	// }
+
+	// &:hover {
+	// 	border-left: 1px solid #fff;
+	// }
+
+	
 }
 
 .phone {
 	color: #ffffff;
 	font-family: "Gotham Pro";
 	font-size: 36px;
+	line-height: 1;
 	font-weight: 700;
 	letter-spacing: 0.3px;
 	position: relative;
@@ -60,69 +80,3 @@
 	display: flex;
 	flex-direction: column;
 }
-
-
-//
-.menu-btn {
-  display: block;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  position: relative;
-  z-index: 9000;
-}
-.menu-btn:hover {
-  cursor: pointer;
-}
-.menu-btn_active {
-  background-color: #fff;
-  transition: background-color 0.5s ease;
-}
-.menu-btn span,
-.menu-btn span::before,
-.menu-btn span::after {
-  position: absolute;
-  top: 50%; margin-top: -1px;
-  left: 50%; margin-left: -10px;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-}
-.menu-btn span::before,
-.menu-btn span::after {
-  content: '';
-  display: block;
-  transition: 0.5s ease;
-}
-.menu-btn span::before {
-  transform: translateY(-5px);
-}
-.menu-btn span::after {
-  transform: translateY(5px);
-}
-.menu-btn_active span {
-  height: 0;
-}
-.menu-btn_active span:before {
-  transform: rotate(45deg);
-  background-color: #3d3431;
-}
-.menu-btn_active span:after {
-  transform: rotate(-45deg);
-  background-color: @second-color;
-}
-
-// .burger-menu {
-// 	margin-top: 10px;
-// 	margin-left: 35px;
-// 	cursor: pointer;
-// 	&__image {
-// 	    width: 25px;
-// 	    height: 3px;
-// 	    border-radius: 3px;
-// 	    background-color: #ffffff;
-// 	    -webkit-box-shadow: 0 12px 0px #ffffff, 0 24px 0px #ffffff;
-// 	    box-shadow: 0 8px 0px #ffffff, 0 16px 0px #ffffff;
-// 	    cursor: pointer;
-// 	}
-// }

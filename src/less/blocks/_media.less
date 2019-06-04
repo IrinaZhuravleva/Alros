@@ -1,109 +1,87 @@
-// // /*==========  Mobile First  ==========*/
+/*==========  Desktop First  ==========*/
 
 
-// @media only screen and (max-width: 768px){ 
-// 	nav#cd-vertical-nav {
-// 		display: none;
-// 	}
+@media only screen and (max-width : 1800px) {
 
-// 	.logo-title-wrapper {
-// 		width: 100%;
-// 	}
+	.navigation__link {
+		font-size: 12px;
+	}
 
-// 	.header-content__title {
-// 		margin: 0 auto;
-// 	}
+	.navigation__item {
+		margin-right: 15px;
+	}
 
-// 	.logo-title-wrapper img{
-// 		display: none;
-// 	}
+	.phone {
+		font-size: 32px;
+		p {
+			font-size: 19px;
+		}
+	}
 
-// 	.container {
-// 		width: 280px;
-// 	}
-// 	.navigation,
-// 	.phone,
-// 	.cd-scroll-down__wrapper {
-// 		display: none;
-// 	}
-// 	.menu-btn {
-// 		display: block
-// 	}
+}
+
+@media only screen and (max-width : 1200px) {
+	.navigation,
+	.no-touch #cd-vertical-nav{
+		display: none;
+	}
+
+	.header-content--desc {
+		font-size: 50px;
+	}
+
+	.button--small,
+	.button--small__tender {
+		display: none;
+	}
+
+	.menu-btn {
+		display: block;
+	}
+
+	// .button--small {
+	//     margin-top: 0px;
+	//     width: 272px;
+	//     text-align: center;
+	//     font-size: 16px;
+	// }
+
+	// .button--small__tender {
+	// 	margin-top: 10px;
+	// }
+
+
+
+}
+
+
+// @media only screen and (max-width : 1200px) {
 // }
-
-// @media (min-width: 769px) {
-// // @media (min-width: 769px) and (max-width: 992px) {
-// 	.container {
-// 		width: 700px;
-// 	}
-// 	nav#cd-vertical-nav {
-// 		display: none;
-// 	}
-// 	.navigation {
-// 		display: none;
-// 	}
-// 	.phone {
-// 		display: none;
-// 	}
-// 	.cd-scroll-down__wrapper {
-// 		display: none;
-// 	}
-// 	.menu-btn {
-// 		display: block
-// 	}
-// }
-
-// // @media (min-width: 993px) and (max-width: 1440px) {
-// // @media (min-width: 992px) {
-// @media (min-width: 1200px) {
-// 	section {
-// 		background-image: linear-gradient(to right, rgba(71, 55, 52, 0.8), rgba(255, 255, 255, 0)), url(../img/fon-desctop.jpg);
-// 	}
-// 	.container {
-// 		width: 900px;
-// 	}
-// 	nav#cd-vertical-nav {
-// 		display: none;
-// 	}
-// 	.navigation {
-// 		display: flex;
-// 	}
-// 	.phone {
-// 		display: block;
-// 	}
-// 	.cd-scroll-down__wrapper {
-// 		display: none;
-// 	}
-// 	.menu-btn {
-// 		display: none;
-// 	}
-// }
-
-// @media (min-width: 1440px) {
-// 	nav#cd-vertical-nav {
-// 		display: block;
-// 	}
-// 	section {
-// 		background-image: linear-gradient(to right, rgba(71, 55, 52, 0.8), rgba(255, 255, 255, 0)), url(../img/fon-desctop.jpg);
-// 	}
-// 	.container {
-// 		width: 1400px;
-// 	}
 	
-// 	.navigation {
-// 		display: flex;
-// 	}
-// 	.phone {
-// 		display: block;
-// 	}
-// 	.menu-btn {
-// 		display: block
-// 	}
-// 	.cd-scroll-down__wrapper {
-// 		display: flex;
-// 	}
-// 	.header-content {
-// 		margin-top: 40px;
-// 	}
-// }
 
+
+@media only screen and (max-width : 992px) {
+	.header-content--desc {
+		font-size: 34px;
+	}
+
+	.button--small {
+	    margin-top: 0px;
+	    width: 272px;
+	    text-align: center;
+	    font-size: 16px;
+	}
+
+	.button--small__tender {
+		margin-top: 10px;
+	}
+
+}
+	
+
+@media only screen and (max-width : 768px) {
+}
+	
+
+@media only screen and (max-width : 480px) {
+	}

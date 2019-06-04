@@ -110,7 +110,30 @@ $('#fun-level-4').animateNumber(
   }
 );
 
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > $(this).height()) {
+      $('.top').addClass('active');
+    } else {
+      $('.top').removeClass('active');
+    }
+  });
 
+  $('.top').click(function(){
+    $('html, body').stop().animate({scrollTop:0}, 'slow', 'swing');
+  });
+
+//
+  // $('.header-nav-drop__home').click(function(){
+  //   $('.droplink').toggleClass('droplink-show');
+  // });
+
+  // $('.header-nav-drop__home').mouseover(function(){
+  //   $('.droplink').addClass('droplink-show');
+  // });
+
+  // $('.header-nav-drop__home').mouseout(function(){
+  //   $('.droplink').removeClass('droplink-show');
+  // });
 	
 });
 
