@@ -6,9 +6,7 @@
 	flex-direction: row;
 	justify-content: space-between;
 	position: relative;
-	a:hover {
-		border-bottom: 1px solid #fff;
-	}
+	
 }
 
 .navigation {
@@ -16,7 +14,13 @@
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	// margin-top: 6px;
+	.logo a:hover {
+		cursor: pointer;
+	}
+	a.navigation__link:hover {
+		border-bottom: 1px solid #fff;
+		// font-weight: 700;
+	}
 }
 
 .navigation__item {
@@ -57,27 +61,77 @@
 }
 
 .phone {
+	display: block;
 	color: #ffffff;
-	font-family: "Gotham Pro";
+	font-family: "Gotham Pro", sans-serif;
 	font-size: 36px;
 	line-height: 1;
 	font-weight: 700;
 	letter-spacing: 0.3px;
 	position: relative;
 
-	p {
+	a {
 		color: #ffffff;
-		font-family: "Gotham Pro";
+	}
+
+	p {
+		margin-top: 5px;
 		font-size: 22px;
 		font-weight: 400;
 		text-decoration: underline;
+	}
+	a.call-order {
+		color: #fff;
+		cursor: pointer;
 	}
 }
 
 .personal-cabinet {
 	position: absolute;
 	top: 85px;
-    right: 6px;
+    right: 35px;
 	display: flex;
 	flex-direction: column;
+	width: 135px;
+	height: 100px;
+	text-align: right;
+	a {
+		margin-top: 15px;
+		position: relative;
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 17.52px;
+		text-transform: uppercase;
+		letter-spacing: 0.96px;
+		&:hover {
+			cursor: pointer;
+			font-weight: 700;
+		}
+	}
+}
+
+.personal-cabinet--link:after {
+	content: ""; 
+	top: 2px;
+	right: -37px;
+    background-image: url('/img/cabinet.svg');
+    background-size: 30px 27px; 
+    width: 30px; 
+    height: 27px; 
+    background-repeat: no-repeat; 
+    position: absolute;
+		
+}
+
+.personal-cabinet--tender:after {
+	content: "";
+	top: 2px;
+	right: -37px;
+    background-image: url('/img/tender.svg');
+    background-size: 29px 29px; 
+    width: 29px; 
+    height: 29px; 
+    background-repeat: no-repeat; 
+    position: absolute;
 }

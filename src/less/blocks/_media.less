@@ -1,10 +1,11 @@
 /*==========  Desktop First  ==========*/
 
 
-@media only screen and (max-width : 1800px) {
+@media only screen and (min-width : 1201px) {
 
 	.navigation__link {
-		font-size: 12px;
+		// font-size: 12px;
+		font-size: 15px;
 	}
 
 	.navigation__item {
@@ -18,16 +19,26 @@
 		}
 	}
 
+	.copyright-nav-wrapper {
+		width: 700px;
+	}
 }
 
 @media only screen and (max-width : 1200px) {
+	h2.section--title{
+		font-size: 36px;
+		font-weight: 500;
+		letter-spacing: 1.61px;
+	}
+
 	.navigation,
-	.no-touch #cd-vertical-nav{
+	.no-touch #cd-vertical-nav,
+	.personal-cabinet {
 		display: none;
 	}
 
 	.header-content--desc {
-		font-size: 50px;
+		font-size: 45px;
 	}
 
 	.button--small,
@@ -39,49 +50,384 @@
 		display: block;
 	}
 
-	// .button--small {
-	//     margin-top: 0px;
-	//     width: 272px;
-	//     text-align: center;
-	//     font-size: 16px;
+	//about us мы
+	// .number {
+	// 	.number--img {
+
+	// 	}
+	// 	span {
+	// 		font-size: 48px;
+	// 		font-weight: 500;
+	// 		letter-spacing: 1.63px;
+	// 	}
+	// 	.text {
+	// 		font-size: 18px;
+	// 		font-weight: 500;
+	// 		letter-spacing: 0.61px;
+	// 	}
 	// }
 
-	// .button--small__tender {
-	// 	margin-top: 10px;
+	//building
+
+	.alros-home--content p {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+
+	//offices
+	.adresse-list {
+		display: none;
+	}
+
+
+	//footer
+
+	.copyright-nav-wrapper {
+		width: 500px;
+	}
+	// .copyright-nav-wrapper {
+	
+	// 	width: 700px;
 	// }
 
+	.phone {
+		font-size: 19px;
+		font-weight: 400;
+		letter-spacing: 0.3px;
+	}
+	.copyright {
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 17.08px;
+	}
+	.navigation.footer-nav-list {
+		display: block;
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: 0.18px;
+		.navigation__item {
+			margin-right: 0;
+		}
+	}
 
-
+	.footer-nav-wrapper {
+		padding-bottom: 30px;
+	}
 }
 
 
-// @media only screen and (max-width : 1200px) {
-// }
-	
-
-
 @media only screen and (max-width : 992px) {
+	.copyright-nav-wrapper {
+		width: 400px;
+	}
+
+	h2.section--title{
+		font-size: 36px;
+		font-weight: 500;
+		letter-spacing: 1.61px;
+	}
 	.header-content--desc {
 		font-size: 34px;
 	}
 
-	.button--small {
-	    margin-top: 0px;
-	    width: 272px;
-	    text-align: center;
-	    font-size: 16px;
+	.personal-cabinet {
+		display: none;
 	}
 
-	.button--small__tender {
+	.call-order {
+		display: none;
+	}
+
+	.navigation-wrapper {
+		align-items: center;
+	}
+
+	.header-content-wrapper p.price {
+		font-size: 38px;
+		span {
+			font-size: 44px;
+		}
+	}
+	//about us
+	// .number .text {
+	// 	// width: 175px;
+	// 	margin: 0 auto;
+	// 	text-align: center;
+	// 	font-size: 18px;
+	// 	font-weight: 500;
+	// 	letter-spacing: 0.61px;
+	// }
+
+	// .number {
+	// 	margin: 10px;
+	// }
+
+	.number:after {
+		width: 150px;
+	}
+
+	.number:nth-of-type(3):after {
+		content: none;
+	}
+
+	// .number:nth-of-type(2) {
+	//     margin-bottom: 69px;//проверить
+	// }
+
+	//building
+	.alros-home--content p {
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+	.building__article-title {
+		font-size: 30px;
+	}
+	.building__article p {
+		font-size: 18px;
+    	font-weight: 400;
+    	line-height: 24px;
+	}
+
+	//footer
+	.copyright-nav-wrapper {
+		width: auto;
+	}
+
+	.navigation-wrapper.footer-nav-wrapper {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.soc {
+		padding-left: 0;
+		li {
+     		margin: 0px; 
+    	}
+		a {	
+		    font-size: 30px;
+		    height: 50px;
+		    width: 50px;
+		    line-height: 50px;
+		}
+	}
+
+	footer a.phone {
+		display: block;
+		padding-top: 20px;
+		font-size: 18px;
+		letter-spacing: 0.15px;
+	}
+	.copyright {
+		font-size: 8px;
+	}
+	.navigation.footer-nav-list {
+		display: none;
+	}
+
+	.footer-nav-wrapper .logo a img {
+		width: 114px;
+		height: 40px;
+	}
+
+	.footer-nav-wrapper {
+		padding-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width : 768px) {
+	.section-home {
+	   background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/face-mob.jpg');
+	}
+	.section-about-us {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-2-mobile.png');
+	}
+	.section-alros-home {
+	   background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-3-mobile.png');
+	}
+	.section-building {
+		background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-4-mobile.png');
+	}
+	.section-offices {
+		background-image: url('/img/map-perspective-mob.png');
+	}
+
+	h2.section--title {
+		font-size: 36px;
+	    font-weight: 500;
+	    letter-spacing: 1.61px;
+	}
+
+	// //header-content
+	.header-content-wrapper {
+		margin-top: 35%;
+		text-align: center;
+	}
+
+	.header-content--desc {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+	.header-content-wrapper p.project-name {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.button--header {
+		margin-top: 40px;
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.header-content-wrapper p.price {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 18px;
+		span {
+			font-size: 30px;
+		}
+	}
+
+
+	//building
+	.building__article-title {
+		margin-top: 15px;
+		width: 100%;
+	}
+	.building__article p {
 		margin-top: 10px;
 	}
 
-}
-	
-
-@media only screen and (max-width : 768px) {
-}
-	
-
-@media only screen and (max-width : 480px) {
+	.footer-nav-wrapper {
+		padding-bottom: 30px;
 	}
+	.number {
+		span {
+			font-size: 30px;
+		}
+	}
+}
+	
+@media only screen and (max-width : 480px) {
+	.top,
+	.active {
+		display: none;
+	}
+
+	//base
+	h2.section--title {
+		margin-top: 25px;
+		margin-bottom: 30px;
+		font-size: 18px;
+		font-weight: 500;
+		letter-spacing: 0.45px;
+	}
+
+	//header-content
+	p.price {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		font-size: 18px;
+		span {
+			font-size: 30px;
+		}
+	}
+	.phone {
+		font-size: 12px;
+    	padding-top: 8px;
+	}
+
+	.header-content-wrapper {
+		margin-top: 200px;
+		text-align: center;
+	}
+
+	.header-content--desc {
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.5;
+	}
+
+	.header-content-wrapper p.project-name {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	.button--header {
+		font-size: 18px;
+		font-weight: 700;
+	}
+
+	//about-us
+	.number {
+		width: 100px;
+		span {
+			font-size: 24px;
+		}
+	}
+
+	.number--img {
+		min-height: 70px;
+		align-items: center;
+
+		img {
+			width: 50%;
+		}
+	}
+
+	.number .text {
+		font-size: 10px;
+		font-weight: 500;
+		letter-spacing: 0.72px;
+	}
+
+	//alros-home
+	.alros-home--content {
+	    margin-top: 30px;
+	}
+	.alros-home--content p {
+		font-size: 10px;
+		font-weight: 400;
+		line-height: 14px;
+		padding-bottom: 10px;
+	}
+
+	//building
+	.building__article-title {
+		margin-top: 0px;
+		font-size: 14px;
+		line-height: 48px;
+	}
+
+	.building__article p {
+		line-height: 12px;
+		font-size: 10px;
+		font-weight: 500;
+	}
+	
+	//footer
+	footer a.phone {
+		display: block;
+		font-size: 18px;
+		letter-spacing: 0.15px;
+	}
+	.copyright {
+		font-size: 8px;
+	}
+	.navigation.footer-nav-list {
+		display: none;
+	}
+
+	.logo a img {
+		width: 114px;
+		height: 40px;
+	}
+
+	.footer-nav-wrapper {
+		padding-bottom: 30px;
+	}
+}

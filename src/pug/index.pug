@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 //- html(lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" )
-html(lang="en" class=" no-touch" )
+html(lang="ru" class=" no-touch" )
 	include pages/_head
 	include pages/_burger-menu
 	include pages/_droplink
+	include pages/_vertical-menu.pug
+	include pages/contact-form
 	body
-		include pages/_vertical-menu.pug
-		
-		//- .content
-			
-		include pages/_header-content
+			//- #fullpage
+			//- .content
+				
+			include pages/_header-content
 
 
-		include pages/_about-us
+			include pages/_about-us
 
 
-		include pages/_alros-home
-			
+			include pages/_alros-home
+				
 
-		include pages/_building
+			include pages/_building
 
 
-		include pages/_offices
+			include pages/_offices
 
-		//- .footer
+			//- .footer
 
-		include pages/_footer
+			include pages/_footer
 
-	<div class="top active" title="Наверх"><i class="fa fa-angle-up"></i></div>
+	<div class="top" title="Наверх"><i class="fa fa-angle-up"></i></div>
+	
 	include pages/_foot

@@ -1,170 +1,214 @@
 <!DOCTYPE html>
-<html class=" no-touch" lang="en">
+<html class=" no-touch" lang="ru">
 
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<title>Alros</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 	<link rel="stylesheet" href="libs/bootstrap-grid/bootstrap-grid.css" />
 	<link rel="stylesheet" href="fonts/GothamPro/stylesheet.css" />
+	<link rel="stylesheet" href="libs/animate.css" />
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 <div class="blockmenu">
 	<ul class="menu">
-		<li class="blockmenu__item"><a class="blockmenu__link" href="#products">Продукты</a></li>
-		<li class="blockmenu__item"><a class="blockmenu__link" href="#reglament">Регламент применения</a></li>
-		<li class="blockmenu__item"><a class="blockmenu__link" href="#experience">Опыт</a></li>
+		<li class="blockmenu__item"><a class="blockmenu__link" href="#main-home">Главная страница</a></li>
+		<li class="blockmenu__item"><a class="blockmenu__link" href="#building">Коммерческое строительство</a></li>
+		<li class="blockmenu__item"><a class="blockmenu__link" href="#services">Услуги</a></li>
 		<li class="blockmenu__item"><a class="blockmenu__link" href="#company">Компания</a></li>
-		<li class="blockmenu__item"><a class="blockmenu__link" href="#mass-media">СМИ о нас</a></li>
-		<li class="blockmenu__item"><a class="blockmenu__link" href="#shop">Магазин</a></li>
+		<li class="blockmenu__item"><a class="blockmenu__link" href="#contacts">Контакты</a></li>
 	</ul>
+</div>
+<ul class="droplink">
+	<li class="droplink-item"><a href="#"></a></li>
+	<li class="droplink-item"><a href="#">Проекты</a></li>
+	<li class="droplink-item"><a href="#">Технологии</a></li>
+	<li class="droplink-item"><a href="#">Интерьер</a></li>
+	<li class="droplink-item"><a href="#">Благоустройство</a></li>
+	<li class="droplink-item"><a href="#">Инжинерия</a></li>
+	<li class="droplink-item"><a href="#">Умный дом</a></li>
+</ul>
+<nav id="cd-vertical-nav">
+	<ul>
+		<li><a href="#main-home" data-number="1"><span class="cd-label">Главная страница</span><span class="cd-dot"></span></a></li>
+		<li><a href="#about-us" data-number="2"><span class="cd-label">Мы </span><span class="cd-dot"></span></a></li>
+		<li><a href="#alros-home" data-number="3"><span class="cd-label">ALROS Home</span><span class="cd-dot"></span></a></li>
+		<li><a href="#building" data-number="4"><span class="cd-label">Коммерческое строительство</span><span class="cd-dot"></span></a></li>
+		<li><a href="#contacts" data-number="6"><span class="cd-label">Контакты</span><span class="cd-dot"></span></a></li>
+	</ul>
+</nav>
+<div class="contact-form">
+	<div class="contact-form-wrapper">
+		<div class="row">
+			<form class="contact_form" action="php/mail.php" method="POST"><input type="hidden" name="project_name" value="Алрос" /><input type="hidden" name="admin_email" value="sparrow113@yandex.ru" /><input type="hidden" name="email_from" value="info@alrosgroup.ru" /><input type="hidden" name="form_subject" value="Сообщение с сайта Алрос" /></form>
+			<h2 class="contact-form-title">Заполните заявку<div class="contact-form-subtitle">и мы свяжемся с вами</div>
+				<div class="contact-form-close"></div>
+			</h2><label for="f_name">Ваше имя:<input type="text" id="f_name" name="Имя" placeholder="" /></label><label for="f_phone">Ваш телефон:<input type="text" id="f_email" name="address" placeholder="" /></label><label for="f_name">Сообщение:<textarea name="message" id="" cols="30" rows="10"></textarea></label><input class="contact_button" type="submit" value="Отправить заявку" />
+		</div>
+	</div>
 </div>
 
 <body>
-	<nav id="cd-vertical-nav">
-		<ul>
-			<li><a href="#projects" data-number="1"><span class="cd-label">Проекты</span><span class="cd-dot"></span></a></li>
-			<li><a href="#about-us" data-number="2"><span class="cd-label">О нас</span><span class="cd-dot"></span></a></li>
-			<li><a href="#alros-home" data-number="3"><span class="cd-label">ALROS Home</span><span class="cd-dot"></span></a></li>
-			<li><a href="#building" data-number="4"><span class="cd-label">Коммерческое строительство</span><span class="cd-dot"></span></a></li>
-			<li><a href="#map" data-number="5"><span class="cd-label">Карта</span><span class="cd-dot"></span></a></li>
-			<li><a href="#contacts" data-number="6"><span class="cd-label">Контакты</span><span class="cd-dot"></span></a></li>
-		</ul>
-	</nav>
-	<section class="cd-section section-home" id="projects"><a href="#projects"></a>
-		<nav class="navigation-wrapper">
-			<div class="logo"><a href="#"></a><img src="img/Alros_logo.png" alt="Alros logo" width="203px" height="72px" /></div>
-			<ul class="navigation">
-				<li class="navigation__item"><a class="navigation__link" href="#home">Home<ul class="droplink">
-							<li class="droplink-item"><a href="#"> </a></li>
-							<li class="droplink-item"><a href="#">Проекты</a></li>
-							<li class="droplink-item"><a href="#">Технологии</a></li>
-							<li class="droplink-item"><a href="#">Интерьер</a></li>
-							<li class="droplink-item"><a href="#">Благоустройство</a></li>
-							<li class="droplink-item"><a href="#">Инжинерия</a></li>
-							<li class="droplink-item"><a href="#">Умный дом</a></li>
-						</ul></a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#building">Коммерческое строительство</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#services">Услуги</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#company">Компания</a></li>
-				<li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
-			</ul>
-			<div class="phone">8 800 555 35 35<p>Заказать обратный звонок</p>
-				<div class="personal-cabinet">
-					<div class="button button--small">Личный кабинет</div>
-					<div class="button button--small button--small__tender">Пригласить на тендер</div>
-				</div>
-			</div>
-			<div class="menu-btn"><span></span></div>
-		</nav>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-9 col-md-offset-1 col-sm-12">
-					<div class="header-content-wrapper">
-						<div class="header-content--desc">Кирпичный дом «Брайер» </div>Проект ALR №2016-1 <br />165 м2<p>Цена дома под ключ: 2 990 млн. рублей</p>
-					</div><a class="button button--header" href="">Подробнее</a>
-				</div>
-			</div>
-		</div>
-		<div class="cd-scroll-down__wrapper"><a class="cd-scroll-down cd-img-replace" href="#about-us"></a></div>
-	</section>
-	<section class="cd-section section-about-us" id="about-us"><a href="#about-us">
-			<div class="container">
-				<div class="row">
-					<h2 class="section--title">О нас</h2>
-				</div>
-				<div class="row">
-					<div class="numbers-animation">
-						<div class="col-md-3 number">
-							<div class="number--img"><img src="img/house.svg" alt="house" /></div><span id="fun-level-1">60</span>
-							<div class="text">Построено домов</div>
-						</div>
-						<div class="col-md- number">
-							<div class="number--img"><img src="img/mall.svg" alt="mall" /></div><span id="fun-level-2">45</span>
-							<div class="text">Построено торговых площадей</div>
-						</div>
-						<div class="col-md- number">
-							<div class="number--img"><img class="number--img" src="img/house.svg" alt="storage" /></div><span id="fun-level-3">40</span>
-							<div class="text">Построено складских помещений</div>
-						</div>
-						<div class="col-md- number">
-							<div class="number--img"><img class="number--img" src="img/house.svg" alt="staff" /></div><span id="fun-level-4">1000</span>
-							<div class="text">Количество сотрудников </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</a></section>
-	<section class="cd-section section-alros-home" id="alros-home"><a href="#alros-home"></a>
-		<div class="container">
-			<div class="col-md-10 col-md-offset-1 alros-home--content">
-				<p>Компания Alros Construction осуществляет строительную деятельность с 2013 года. В данным момент Alros Construction курирует частные и коммерчесие объекты в следующих регионах: Москва, Москвоская область, Калужская область, Тульская область, Рязанская область, Владимирская область, Тверская область, Калинградская область, Ставропольский край и Краснодарский край. В 2017 году компания Alros Construction начала работать в сегменте "Умный дом" и представила на российский рынок свой продукт <a href="#" class="alros-home--content-link">Alros Smart Home</a> (ASH).</p>
-				<p>С 2018 года компания Alros Construction занимается установкой солнечных батарей под ключ. Этот продукт называется <a href="#" class="alros-home--content-link">Alros Solar Panel</a> (ASP).</p>
-				<p>С 2019 года компания Alros Construction занимается Геометральным отоплением и выполняет весь спектр услуг в данном направлении (установка, пусконаладка, оптимизация, увеличение мощности и тд. Этот продукт называется <a href="#" class="alros-home--content-link">Alros Geothermal Heating</a> (AGH).</p>
-			</div>
-		</div>
-	</section>
-	<section class="cd-section section-building" id="building"><a href="#building"></a>
-		<div class="container">
-			<h2 class="section--title">Коммерческое строительство</h2>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="building__article-title">Генеральный подрядчик</div>
-					<div class="building__article">
-						<p>В сложившихся экономических условиях современного рынка для реализация инвестиционного проекта любой сложности в области строительства невозможна и малоэффективна без генерального подрядчика.</p>
-						<p>Именно генеральный подрядчик несет ответсвенность за качество производимых работ, за взаимодействие с субподрядчиками, а так же за сдачу объекта в срок.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="building__article-title">Генеральный проектировщик</div>
-					<div class="building__article">
-						<p>В сложившихся экономических условиях современного рынка для реализация инвестиционного проекта любой сложности в области строительства невозможна и малоэффективна без генерального проектировщика.</p>
-						<p>Именно генеральный проектировщик должен грамотно выполнить проект и обеспечит качественное воплощение этого проекта в жизнь.</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="building__article-title">Технический заказчик</div>
-					<div class="building__article">
-						<p>Alros Construction качественно выполняет работу "под ключ": от разработки концепции до сдачи объекта в согласо- ванные сроки, с последующей гарантией за качество выполненных работ.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="cd-section section-offices" id="map"><a href="#map"></a>
-		<h2 class="section--title">Наши представительства</h2>
-		<div class="offices-map"></div>
-	</section>
-	<footer class="main-footer" id="contacts"><a href="#contacts"></a>
-		<nav class="navigation-wrapper footer-nav-wrapper">
-			<div class="logo"><a href="#"></a><img src="img/Alros_logo.png" alt="Alros logo" width="203px" height="72px" /></div>
-			<div class="copyright-nav-wrapper">
-				<ul class="navigation footer-nav-list">
-					<li class="navigation__item"><a class="navigation__link" href="#home">Home</a></li>
+	<div id="fullpage">
+		<section class="cd-section section-home" id="main-home"><a href="#main-home"></a>
+			<nav class="navigation-wrapper">
+				<div class="logo"><a href="#main-home"><img src="img/Alros_logo.svg" alt="Alros logo" width="85%" height="auto" /></a></div>
+				<ul class="navigation">
+					<li class="navigation__item"><a class="navigation__link" href="#home">Home<ul class="droplink">
+								<li class="droplink-item"><a href="#"></a></li>
+								<li class="droplink-item"><a href="#">Проекты</a></li>
+								<li class="droplink-item"><a href="#">Технологии</a></li>
+								<li class="droplink-item"><a href="#">Интерьер</a></li>
+								<li class="droplink-item"><a href="#">Благоустройство</a></li>
+								<li class="droplink-item"><a href="#">Инжинерия</a></li>
+								<li class="droplink-item"><a href="#">Умный дом</a></li>
+							</ul></a></li>
 					<li class="navigation__item"><a class="navigation__link" href="#building">Коммерческое строительство</a></li>
 					<li class="navigation__item"><a class="navigation__link" href="#services">Услуги</a></li>
 					<li class="navigation__item"><a class="navigation__link" href="#company">Компания</a></li>
 					<li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
 				</ul>
-				<div class="phone">8 800 555 35 35</div>
-				<div class="copyright">&copy; 2019 ООО «Алрос». Вся информация размещенная на сайте является интеллектуальной собственностью.</div>
+				<div class="phone"><a href="tel:+79152005550">8 915 200 55 50</a>
+					<p><a class="call-order" href="#">Заказать обратный звонок</a></p>
+					<div class="personal-cabinet"><a class="personal-cabinet--link" href="#">Личный кабинет</a><a class="personal-cabinet--tender" href="#">Пригласить на тендер</a></div>
+				</div>
+				<div class="menu-btn"><span></span></div>
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-11 col-md-offset-1 col-sm-12">
+						<div class="header-content-wrapper">
+							<div class="header-content--desc">Кирпичный дом «Брайер» 165 м<sup>2</sup>
+								<p class="project-name">проект ALR №2016-1 </p>
+							</div>
+							<p class="price animated infinite pulse">от<span> 2 990 000 </span>руб.</p><a class="button button--header" href="">Подробнее</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="social-icons">
-				<ul class="soc">
-					<li><a href="#"><i class="fa fa-vk"></i></a></li>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-				</ul>
+		</section>
+		<section class="cd-section section-about-us" id="about-us"><a href="#about-us">
+				<div class="container">
+					<div class="row">
+						<h2 class="section--title">Мы</h2>
+					</div>
+					<div class="row">
+						<div class="numbers-animation">
+							<div class="numbers-wrapper">
+								<div class="col-md-3 col-sm-6 col-xs-6">
+									<div class="number">
+										<div class="number--img"><img src="img/house.svg" alt="house" /></div><span id="fun-level-1">60</span>
+										<div class="text">Построено домов</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-6">
+									<div class="number">
+										<div class="number--img"><img src="img/mall.svg" alt="mall" /></div><span id="fun-level-2">45</span>
+										<div class="text">Построено торговых площадей</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-6">
+									<div class="number">
+										<div class="number--img"><img class="number--img" src="img/storage.svg" alt="storage" /></div><span id="fun-level-3">40</span>
+										<div class="text">Построено складских помещений</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-6 col-xs-6">
+									<div class="number">
+										<div class="number--img"><img class="number--img" src="img/staff.svg" alt="staff" /></div><span id="fun-level-4">1000</span>
+										<div class="text">Количество сотрудников </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</a></section>
+		<section class="cd-section section-alros-home" id="alros-home"><a href="#alros-home"></a>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 alros-home--content">
+						<p>Компания Alros Construction осуществляет строительную деятельность с 2013 года. В&nbsp;данный момент Alros Construction курирует частные и коммерчесие объекты в&nbsp;следующих регионах: Москва, Москвоская область, Калужская область, Тульская область, Рязанская область, Владимирская область, Тверская область, Калинградская область, Ставропольский край и Краснодарский край. В 2017 году компания Alros Construction начала работать в сегменте "Умный дом" и представила на российский рынок свой продукт <a href="#" class="alros-home--content-link">Alros Smart Home</a> (ASH).</p>
+						<p>С 2018 года компания Alros Construction занимается установкой солнечных батарей под&nbsp;ключ. Этот продукт называется <a href="#" class="alros-home--content-link">Alros Solar Panel</a> (ASP).</p>
+						<p>С 2019 года компания Alros Construction занимается Геометральным отоплением и&nbsp;выполняет весь спектр услуг в данном направлении (установка, пусконаладка, оптимизация, увеличение мощности и т.д. Этот продукт называется <a href="#" class="alros-home--content-link">Alros Geothermal Heating</a> (AGH).</p>
+					</div>
+				</div>
 			</div>
-		</nav>
-	</footer>
+		</section>
+		<section class="cd-section section-building" id="building"><a href="#building"></a>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h2 class="section--title">Коммерческое строительство</h2>
+					</div>
+				</div>
+				<div class="row building--content">
+					<div class="col-md-4 col-md-offset-1 col-md-12 col-sm-12 col-xs-12">
+						<div class="building__article-title">Генеральный подрядчик</div>
+						<div class="building__article">
+							<p>В сложившихся экономических условиях современного рынка реализация инвестиционного проекта любой сложности в области строительства невозможна и&nbsp;малоэффективна без генерального подрядчика.</p>
+							<p>Именно генеральный подрядчик несет ответственность за качество производимых работ, за&nbsp;взаимодействие с&nbsp;субподрядчиками, а также за сдачу объекта в срок.</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-md-12 col-sm-12 col-xs-12">
+						<div class="building__article-title">Генеральный проектировщик</div>
+						<div class="building__article">
+							<p>В сложившихся экономических условиях современного рынка реализация инвестиционного проекта любой сложности в области строительства невозможна и малоэффективна без генерального проектировщика.</p>
+							<p>Именно генеральный проектировщик должен грамотно выполнить проект и&nbsp;обеспечить качественное воплощение этого проекта в жизнь.</p>
+						</div>
+					</div>
+					<div class="col-md-3 col-md-12 col-sm-12 col-xs-12">
+						<div class="building__article-title">Технический заказчик</div>
+						<div class="building__article">
+							<p>Alros Construction качественно выполняет работу "под ключ": от&nbsp;разработки концепции до&nbsp;сдачи объекта в&nbsp;согласованные сроки, с последующей гарантией за&nbsp;качество выполненных работ.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="cd-section section-offices" id="contacts"><a href="#contacts"></a>
+			<div class="container">
+				<div class="row offices--content">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<h2 class="section--title">Наши представительства</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<footer class="main-footer">
+				<nav class="navigation-wrapper footer-nav-wrapper">
+					<div class="logo"><a href="#main-home"><img src="img/Alros_logo.svg" alt="Alros logo" width="85%" height="auto" /></a></div>
+					<div class="copyright-nav-wrapper">
+						<ul class="navigation footer-nav-list">
+							<li class="navigation__item"><a class="navigation__link" href="#home">Home</a></li>
+							<li class="navigation__item"><a class="navigation__link" href="#building">Коммерческое строительство</a></li>
+							<li class="navigation__item"><a class="navigation__link" href="#services">Услуги</a></li>
+							<li class="navigation__item"><a class="navigation__link" href="#company">Компания</a></li>
+							<li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
+						</ul><a class="phone" href="tel:+74952555550">8 495 255 55 50</a>
+						<div class="copyright">&copy; 2019 ООО «Алрос». Вся информация размещенная на сайте является интеллектуальной собственностью.</div>
+					</div>
+					<div class="social-icons">
+						<ul class="soc">
+							<li><a href="#"><i class="fa fa-vk"></i></a></li>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+						</ul>
+					</div>
+				</nav>
+			</footer>
+		</section>
+	</div>
 </body>
-<div class="top active" title="Наверх"><i class="fa fa-angle-up"></i></div>
+<div class="top" title="Наверх"><i class="fa fa-angle-up"></i></div>
 <script src="libs/jquery/jquery-3.3.1.min.js"></script>
 <script src="libs/animate-number/jquery.animateNumber.min.js"></script>
+<script type="text/javascript" src="libs/fullpage.js"></script>
 <script src="js/main.js"></script>
 
 </html>

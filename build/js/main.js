@@ -2,42 +2,35 @@ $(document).ready(function(){
 
   var link_active = $('.blockmenu__link');
   var menu = $('.blockmenu');
-  var close = $('.menu-btn_active');
-
   var menuBtn =$('.menu-btn');
 
   menuBtn.click(function(){
-    menuBtn.toggleClass('menu-link_active');
     menu.toggleClass('blockmenu_active');
     menuBtn.toggleClass('menu-btn_active');
 
   });
-  close.click(function(){
-    menu.removeClass('blockmenu_active');
+
+  link_active.click(function(){ 
+    menu.toggleClass('blockmenu_active'); //выезжающее меню
+    menuBtn.removeClass('menu-btn_active'); //крестик
   });
-  link_active.click(function(){
-    menu.removeClass('blockmenu_active');
-  });
 
-  //
 
-  // // $('.clicker').on("click", function(){
-  // //   $('.header-content__background').toggleClass('active');
-  // //   $('.block').toggleClass('active');
-  // // });
+  //Активация поп-апа для обратного звонка
+  // $('.call-order').click(function(){
+  //   $('.contact-form').addClass('contact-form--active');
 
-  // var startTimer = function() {
-  //   $('.header-content__background').addClass('active');
-  // };
+  // })
 
-  // setTimeout(startTimer, 500);
+  // $('.contact-form-close').click(function(){
+  //   $('.contact-form').removeClass('contact-form--active');
+  // })
 
-  //анимация чисел
 
+  //Анимация чисел
   $('#fun-level-1').animateNumber(
     {
       number: 60,
-      'font-size': '72px',
     },
     {
       easing: 'swing',
@@ -48,7 +41,7 @@ $(document).ready(function(){
   $('#fun-level-2').animateNumber(
     {
       number: 45,
-      'font-size': '72px',
+      // 'font-size': '48px',
     },
     {
       easing: 'swing',
@@ -59,7 +52,6 @@ $(document).ready(function(){
   $('#fun-level-3').animateNumber(
     {
       number: 45,
-      'font-size': '72px',
     },
     {
       easing: 'swing',
@@ -70,7 +62,6 @@ $(document).ready(function(){
   $('#fun-level-4').animateNumber(
     {
       number: 1000,
-     'font-size': '72px',
     },
     {
       easing: 'swing',
@@ -80,6 +71,11 @@ $(document).ready(function(){
 
 
 //скроллинг
+
+  $('.top').click(function(){
+    $('html, body').stop().animate({scrollTop:0}, 'slow', 'swing');
+  });
+
   $(window).scroll(function(){
     if ($(this).scrollTop() > $(this).height()) {
       $('.top').addClass('active');
@@ -88,12 +84,18 @@ $(document).ready(function(){
     }
   });
 
-  $('.top').click(function(){
-    $('html, body').stop().animate({scrollTop:0}, 'slow', 'swing');
-  });
-
-
 	
+});
+
+//анимация блоков при скролле
+$(window).scroll(function (){
+    $('.mov').each(function (){
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+900) {
+            $(this).addClass('slideInUp');
+        }
+    });
 });
 
 

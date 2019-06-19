@@ -1,0 +1,36 @@
+nav.navigation-wrapper
+	.logo
+		a(href="#main-home")
+			//- img(src="img/Alros_logo.svg", alt="Alros logo", width="203px", height="72px")
+			img(src="img/Alros_logo.svg", alt="Alros logo", width="85%", height="auto")
+	ul.navigation
+		li.navigation__item
+			a(href="#home").navigation__link Home
+				include _droplink
+
+		li.navigation__item
+			a(href="#building").navigation__link Коммерческое строительство
+		li.navigation__item
+			a(href="#services").navigation__link Услуги
+		
+		li.navigation__item
+			a(href="#company").navigation__link Компания
+		li.navigation__item
+			a(href="#contacts").navigation__link Контакты
+
+	.phone
+		a(href="tel:+79152005550") 8 915 200 55 50
+		//- a(href="tel:+74952555550") 8 495 255 55 50
+		
+		p
+			a(href="#").call-order Заказать обратный звонок
+	
+		.personal-cabinet
+			a(href="#").personal-cabinet--link Личный  кабинет
+			a(href="#").personal-cabinet--tender Пригласить на тендер
+
+	.menu-btn
+		span
+
+			//- .button.button--small Личный  кабинет
+			//- .button.button--small.button--small__tender Пригласить на тендер

@@ -10,6 +10,7 @@
 
 .copyright-nav-wrapper {
 	text-align: center;
+	// width: 800px;
 }
 
 .soc {
@@ -20,8 +21,8 @@
 	}
 
 	li {
-		display: inline-block;//встают в ряд
-		margin: 3px;
+		display: inline-block;
+		margin: 0 3px;
 		font-size: 20px;
 	}
 		
@@ -33,7 +34,7 @@
 	    height: 38px;
 	    width: 38px;
 	    text-align: center;
-	    margin: 18px 0;
+	    margin: 0;
 	    line-height: 38px;
 	    border-radius: 10em;
 	    transition: background-color .25s ease;
@@ -50,10 +51,8 @@
 }
 
 .top {
-
     position: fixed;
     bottom: 25px;
-    // background-color: #e0e0e0;
     border: 2px solid #fff;
     background-color: transparent;
     -webkit-border-radius: 10em;
@@ -94,11 +93,13 @@
 }
 
 .footer-nav-list {
-	width: 565px;
-	margin: 0 auto;
-	padding-bottom: 15px;
+	display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 15px;
 }
 
 .copyright {
 	padding-top: 15px;
+	padding-bottom: 10px;
 }

@@ -1,0 +1,10 @@
+User-agent: Yandex
+Allow: /
+Disallow: /*utm_
+
+User-agent: Googlebot
+Allow: /
+Disallow: /*utm_
+
+Sitemap: http://www.alrosgroup.ru/sitemap.xml
+

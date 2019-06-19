@@ -1,42 +1,41 @@
 .droplink {
 	font-family: "Gotham Pro", sans-serif;
-	// font-size: 18px;
 	font-size: 12px; //проставить соответствие со шрифтом меню!!!!
 	font-weight: 400;
 	line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 0.18px;
-
-
     position: absolute;
-    // top: -27px;
-    // left: 324px;
+    // top: 0px;
     top: -26px;
     left: -45px;
-
-  // left: 50%;
-  // top: 100%;
-  // width: 210px;
-  // margin-left: -105px;
-
-
 	z-index: 12;
-
 	//добавлено
-	visibility: hidden;
+
+	// visibility: hidden;
+	// opacity: 0;
+	// transform: scale(.8);
+	// transition: .4s ease-in-out;
+
+	//добавлено 2
 	opacity: 0;
-	transform: scale(.8);
-	transition: .4s ease-in-out; 
+	transform: scaleY(0);
+	transform-origin: 0 0;
+	transition: .5s ease-in-out;
 	a {
 		color: #ffffff;
 	}
-
 }
 
 .navigation > li:hover .droplink {
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1);
+  // visibility: visible;
+  // opacity: 1;
+  // transform: scale(1);
+
+
+	//добавлено 2
+	opacity: 1;
+  	transform: scaleY(1);
 }
 
 .droplink-item {

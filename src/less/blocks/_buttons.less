@@ -1,0 +1,58 @@
+.button,
+.button--header {
+ 	transition: all 0.2s ease-in;
+ 	display: inline-block;
+ 	line-height: 1;
+ 	outline: none;
+ 	cursor: pointer;
+ 	text-decoration: none;
+ 	border-radius: 45px;
+	border: 5px solid #ffffff;
+	
+	background-color: transparent;
+	padding: 0.7em 1em;
+	text-transform: uppercase;
+	color: #323232;
+	font-family: "Gotham Pro", sans-serif;
+	font-size: 32px;
+	font-weight: 500;
+	letter-spacing: 3px;
+	color: #fff;
+}
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #ffffff;
+  color: #323232;
+}
+
+.button--header {
+ 	// padding: 0.6em 2.32em;
+ 	padding: 0.5em 2em;
+}
+
+.button--small {
+	margin-top: 30px;
+	width: 300px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: 0.9px;
+	border: 3px solid #ffffff;
+}
+
+.button--inverse {
+	margin-top: 20px;
+	background-color: transparent;
+	color: #fff; 
+	&:hover,
+	&:focus,
+	&:active {
+	  // border: 3px solid #ffffff;
+	  background-color: #ffffff; 
+	}
+}
+
+.button--small__tender {
+	margin-top: 15px;
+}

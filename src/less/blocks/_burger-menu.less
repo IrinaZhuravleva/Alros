@@ -1,43 +1,34 @@
 .blockmenu {
   position: fixed;
   top: 0;
-  // width: 100vw;
-
-  // для укороченного меню
-  width: 300px;
+  width: 260px;
   height: 100%;
-  // background-color: @dark-brown;
-
-  background-color: #323232;
-  // opacity: 0.9;
-
-
+  background-color: @brown-grey;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-align-items: center;
-          align-items: center;
   padding-top: 135px;
   z-index: 1000;
   transition: all 0.3s;
   right: -100vw;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .blockmenu__item {
-  position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 267px;
-    height: 1px;
-    background-color: #ffffff;
-  }
-  &:last-child:after {
-    display: none;
-  }
+  padding-left: 20px;
+//   position: relative;
+//   &:after {
+//     content: "";
+//     position: absolute;
+//     top: 40px;
+//     left: 0;
+//     width: 267px;
+//     height: 1px;
+//     background-color: #ffffff;
+//   }
+//   &:last-child:after {
+//     display: none;
+//   }
 }
 
 .blockmenu ul {
@@ -46,7 +37,7 @@
 }
 
 .blockmenu li {
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .blockmenu a {
@@ -61,7 +52,12 @@
   right: 0;
 }
 
-//
+.personal-cabinet-links {
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+//Кнопка-бургер
 .menu-btn {
   // display: block;
   display: none;
