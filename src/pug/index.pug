@@ -5,15 +5,18 @@ html(lang="ru" class=" no-touch" )
 	include pages/_burger-menu
 	include pages/_droplink
 	include pages/_vertical-menu.pug
-	include pages/contact-form
+	<a href="#main-home" class="top active"><i class="fa fa-angle-up"></i></a>
+	//- <div class="top" title="Наверх"><i class="fa fa-angle-up"></i></div>
+	//- include pages/contact-form
 	body
-			//- #fullpage
+		#fullpage
 			//- .content
 				
 			include pages/_header-content
 
 
 			include pages/_about-us
+			//- include pages/_about-us-new
 
 
 			include pages/_alros-home
@@ -26,8 +29,8 @@ html(lang="ru" class=" no-touch" )
 
 			//- .footer
 
-			include pages/_footer
+			//- include pages/_footer
 
-	<div class="top" title="Наверх"><i class="fa fa-angle-up"></i></div>
+	
 	
 	include pages/_foot

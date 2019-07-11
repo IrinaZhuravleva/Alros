@@ -15,6 +15,14 @@ $(document).ready(function(){
     menuBtn.removeClass('menu-btn_active'); //крестик
   });
 
+  //Анимация на меню
+
+  $('.link-home').click(function(event){
+    // event.preventDefault();
+    $('.login-text-container').toggleClass('login-text-container-active');
+
+  });
+
 
   //Активация поп-апа для обратного звонка
   // $('.call-order').click(function(){
@@ -51,7 +59,7 @@ $(document).ready(function(){
 
   $('#fun-level-3').animateNumber(
     {
-      number: 45,
+      number: 40,
     },
     {
       easing: 'swing',
@@ -69,20 +77,6 @@ $(document).ready(function(){
     }
   );
 
-
-//скроллинг
-
-  $('.top').click(function(){
-    $('html, body').stop().animate({scrollTop:0}, 'slow', 'swing');
-  });
-
-  $(window).scroll(function(){
-    if ($(this).scrollTop() > $(this).height()) {
-      $('.top').addClass('active');
-    } else {
-      $('.top').removeClass('active');
-    }
-  });
 
 	
 });
@@ -148,4 +142,20 @@ jQuery(document).ready(function($){
           600
         );
   }
+
+  //скроллинг
+
+  $('.top').click(function(){
+    $('html, body').stop().animate({scrollTop:0}, 'slow', 'swing');
+  });
+// функция прокрутки
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > $(this).height()) {
+      $('.top').addClass('active');
+    } else {
+      $('.top').removeClass('active');
+    }
+  });
+
+
 });
