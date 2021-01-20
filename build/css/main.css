@@ -746,7 +746,7 @@ Main components
   content: "";
   top: 2px;
   right: -37px;
-  background-image: url('/img/cabinet.svg');
+  background-image: url('../img/cabinet.svg');
   background-size: 30px 27px;
   width: 30px;
   height: 27px;
@@ -757,7 +757,7 @@ Main components
   content: "";
   top: 2px;
   right: -37px;
-  background-image: url('/img/tender.svg');
+  background-image: url('../img/tender.svg');
   background-size: 29px 29px;
   width: 29px;
   height: 29px;
@@ -765,10 +765,10 @@ Main components
   position: absolute;
 }
 .section-home {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url('/img/face.jpg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/face.jpg');
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/face.jpg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/face.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url('../img/face.jpg');
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/face.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/face.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/face.jpg');
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;
@@ -800,10 +800,10 @@ Main components
   font-size: 80px;
 }
 .section-about-us {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url('/img/bg-2.jpg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-2.jpg');
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-2.jpg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-2.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url('../img/bg-2.jpg');
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/bg-2.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/bg-2.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/bg-2.jpg');
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;
@@ -852,10 +852,10 @@ Main components
   opacity: .3;
 }
 .section-alros-home {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url('/img/bg-3.jpg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-3.jpg');
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-3.jpg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-3.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url('../img/bg-3.jpg');
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/bg-3.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/bg-3.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/bg-3.jpg');
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;
@@ -877,10 +877,10 @@ a.alros-home--content-link {
   color: #89e5ff;
 }
 .section-building {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url('/img/bg-4.jpg');
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-4.jpg');
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-4.jpg');
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('/img/bg-4.jpg');
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.3))), url('../img/bg-4.jpg');
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/bg-4.jpg');
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/bg-4.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%), url('../img/bg-4.jpg');
   background-repeat: no-repeat, no-repeat;
   background-position: center;
   background-size: cover;
@@ -900,7 +900,7 @@ a.alros-home--content-link {
   font-weight: 400;
 }
 .section-offices {
-  background-image: url('/img/map-three-3.jpg');
+  background-image: url('../img/map-three-3.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
